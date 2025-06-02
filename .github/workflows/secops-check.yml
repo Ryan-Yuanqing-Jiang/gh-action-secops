@@ -1,0 +1,17 @@
+name: SecOps PR Checklist
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  secops-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # If testing in the same repo, use ./ path
+      - name: Run SecOps PR Checklist Action
+        uses: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
