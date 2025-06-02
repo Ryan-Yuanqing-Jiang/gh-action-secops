@@ -1,0 +1,10 @@
+# Example security checklist for PRs
+checklist:
+  - id: S1
+    description: 'No hardcoded secrets (API keys, passwords)'
+  - id: S2
+    description: 'No use of deprecated crypto algorithms'
+  - id: S3
+    description: 'All user input is validated and sanitized'
+  - id: S4
+    description: 'No PII is logged or exposed in code' 
