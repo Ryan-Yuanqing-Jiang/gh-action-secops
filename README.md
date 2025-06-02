@@ -19,4 +19,6 @@ checklist:
 ```
 
 ## What happens?
-- On PR open/update, the action loads the checklist, mocks a scan, comments on the PR, and (mock) updates Notion. 
+- On PR open/update, the action loads the checklist, mocks a scan, comments on the PR, and (mock) updates Notion.
+
+This is a test
