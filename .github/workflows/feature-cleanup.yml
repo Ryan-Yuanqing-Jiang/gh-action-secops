@@ -4,6 +4,10 @@ on:
   issues:
     types: [opened]
 
+permissions:
+  issues: write
+  contents: read
+
 jobs:
   handle-feature-flag-cleanup:
     runs-on: ubuntu-latest
